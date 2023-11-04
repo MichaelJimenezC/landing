@@ -1038,3 +1038,6 @@ strong {
   
   background-color: black;
 }
+#ticket-form-message{
+  resize: none;
+}
