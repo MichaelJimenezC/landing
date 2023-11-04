@@ -30,4 +30,19 @@
   
   })(window.jQuery);
 
+  document.addEventListener('DOMContentLoaded', function() {
+    // Obtener el valor del parámetro "plan" de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedPlan = urlParams.get('plan');
+
+    // Comprobar qué plan se ha seleccionado y marcarlo como seleccionado
+    if (selectedPlan === 'fitmi') {
+        document.getElementById('flexRadioDefault1').checked = true;
+    } else if (selectedPlan === 'hercules') {
+        document.getElementById('flexRadioDefault2').checked = true;
+    } else if (selectedPlan === 'immortal') {
+        document.getElementById('flexRadioDefault3').checked = true;
+    }
+});
+
 
