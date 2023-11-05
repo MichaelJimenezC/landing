@@ -133,3 +133,7 @@ $(document).ready(function () {
     return nombre && email && telefono ;
   }
 });
+document.getElementById('btn-cerrar-modal').addEventListener('click', function() {
+  // Redirigir a index.html
+  window.location.href = '../index.html';
+});
